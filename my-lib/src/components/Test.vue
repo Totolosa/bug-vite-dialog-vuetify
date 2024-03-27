@@ -9,11 +9,13 @@
 </template>
 
 <script setup>
-import {ref} from "vue";
+  import { ref} from "vue";
+  import {useDisplay} from "vuetify";
 
-const modelValue = defineModel({type: Boolean})
+  const {width } = useDisplay();
+  console.log("usedisplay vuetify lib: ", width.value)
 
-const items = ref(["Colorado", "Paris", "Toulouse", "Marseille"]);
+  const modelValue = defineModel({type: Boolean})
+
+  const items = ref(["Colorado", "Paris", "Toulouse", "Marseille"]);
 </script>
-
-<style lang="scss" scoped></style>

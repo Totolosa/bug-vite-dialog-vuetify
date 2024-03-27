@@ -1,40 +1,30 @@
 {
   "name": "my-lib",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "files": [
     "dist"
   ],
   "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.js",
   "exports": {
     ".": {
       "import": "./dist/my-lib.js",
       "require": "./dist/my-lib.umd.cjs"
     },
-    "./dist/*.css": {
-      "import": "./dist/*.css",
-      "require": "./dist/*.css"
-    }
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "vite-plugin-vuetify": "^2.0.3",
-    "vue": "^3.4.21"
+    "vite-plugin-vuetify": "^1.0.2",
+    "vue": "^3.3.4",
+    "vuetify": "^3.5.12"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
-    "vite": "^5.1.6",
-    "vite-plugin-vue-devtools": "^7.0.18",
-    "vuetify": "^3.5.12"
-  },
-  "peerDependencies": {
-    "vue": "^3.4.21",
-    "vuetify": "^3.5.12"
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.6"
   }
 }

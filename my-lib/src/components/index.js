@@ -1,5 +1,1 @@
-import { default as Test } from "./Test.vue"
-
-export {
-  Test
-};
+export { default as Test } from "./Test.vue"
