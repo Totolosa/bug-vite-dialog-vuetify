@@ -18,10 +18,7 @@
       "import": "./dist/my-lib.js",
       "require": "./dist/my-lib.umd.cjs"
     },
-    "./dist/*.css": {
-      "import": "./dist/*.css",
-      "require": "./dist/*.css"
-    }
+    "./style.css": "./dist/style.css"
   },
   "dependencies": {
     "vite-plugin-vuetify": "^2.0.3",

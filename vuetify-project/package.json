@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
-    "my-lib": "file:/home/tdayde/socotec/migration_vue3/bug-vite-dialog-vuetify/my-lib",
+    "my-lib": "file:/Users/tdayde/Programmation/bug-vite-dialog-vuetify/my-lib",
     "roboto-fontface": "*",
     "vite-plugin-vue-devtools": "^7.0.24",
     "vue": "^3.4.0",

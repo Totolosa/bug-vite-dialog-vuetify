@@ -13,30 +13,29 @@ import { fileURLToPath, URL } from "node:url";
 export default defineConfig({
   plugins: [
     Vue({
-      template: { transformAssetUrls },
+      // template: { transformAssetUrls },
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#readme
-    Vuetify({ autoImport: false }),
-    // Vuetify(),
-    Components(),
-    ViteFonts({
-      google: {
-        families: [
-          {
-            name: "Roboto",
-            styles: "wght@100;300;400;500;700;900",
-          },
-        ],
-      },
-    }),
-    VueDevTools(),
+    Vuetify(),
+    // Components(),
+    // ViteFonts({
+    //   google: {
+    //     families: [
+    //       {
+    //         name: "Roboto",
+    //         styles: "wght@100;300;400;500;700;900",
+    //       },
+    //     ],
+    //   },
+    // }),
+    // VueDevTools(),
   ],
-  define: { "process.env": {} },
+  // define: { "process.env": {} },
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
-    extensions: [".js", ".json", ".jsx", ".mjs", ".ts", ".tsx", ".vue"],
+    // extensions: [".js", ".json", ".jsx", ".mjs", ".ts", ".tsx", ".vue"],
   },
   server: {
     port: 11000,

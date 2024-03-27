@@ -4,10 +4,10 @@
       <HelloWorld />
     </v-main>
 
-    <AppFooter />
   </v-app>
 </template>
 
 <script setup>
+import HelloWorld from './components/HelloWorld.vue';
   //
 </script>
