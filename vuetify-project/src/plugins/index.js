@@ -7,9 +7,10 @@
 // Plugins
 import vuetify from './vuetify'
 
-import lib from "my-lib";
+// import {vuetify, MyComponentLibrary} from "my-lib";
+import { MyComponentLibrary} from "my-lib";
 
 export function registerPlugins (app) {
   app.use(vuetify)
-  app.use(lib)
+  app.use(MyComponentLibrary)
 }

@@ -1,0 +1,1 @@
+(cd ../my-lib && yarn build) && sudo rm -rf node_modules && yarn && yarn dev
